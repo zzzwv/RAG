@@ -1,0 +1,18 @@
+{
+  "normal_chunk_size": 1000,
+  "normal_chunk_overlap": 200,
+  "technical_chunk_size": 500,
+  "technical_chunk_overlap": 100,
+  "memory_turns": 10,
+  "memory_max_chars": 12000,
+  "vector_top_k": 10,
+  "bm25_top_k": 10,
+  "fused_top_k": 10,
+  "rrf_k": 60,
+  "rerank_top_n": 3,
+  "rerank_threshold": 0.35,
+  "embedding_model": "BAAI/bge-small-zh",
+  "reranker_model": "BAAI/bge-reranker-base",
+  "llm_base_url": "https://api.deepseek.com/v1",
+  "llm_model": "deepseek-v4-pro"
+}

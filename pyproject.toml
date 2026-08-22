@@ -1,0 +1,17 @@
+[project]
+name = "enterprise-rag"
+version = "1.0.0"
+requires-python = ">=3.10,<3.13"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint.per-file-ignores]
+"app.py" = ["E402"]
+"scripts/*.py" = ["E402"]

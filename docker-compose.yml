@@ -1,0 +1,15 @@
+services:
+  rag:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      RAG_MASTER_KEY: ${RAG_MASTER_KEY:-}
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - rag-models:/models/huggingface
+    restart: unless-stopped
+
+volumes:
+  rag-models:
