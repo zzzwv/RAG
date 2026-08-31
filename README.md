@@ -162,8 +162,6 @@ python scripts/manage_secrets.py set-api-key
 python scripts/manage_secrets.py init-admin
 ```
 
-> 请勿将 `RAG_MASTER_KEY`、API Key 或 `config/secrets.enc` 提交到公开仓库。
-
 ### Docker 部署
 
 ```bash
